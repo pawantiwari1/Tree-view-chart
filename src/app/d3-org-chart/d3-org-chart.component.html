@@ -1,3 +1,11 @@
 <div class="d3graph" #chartContainer id="chartContainer"></div>
 
-<div class="ngxChart">ngx org chart here</div>
+<div class="ngxChart">
+  ngx org chart here
+
+  <ngx-org-chart
+    [nodes]="nodes"
+    direction="vertical"
+    (itemClick)="test($event)"
+  ></ngx-org-chart>
+</div>
